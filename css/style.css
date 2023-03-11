@@ -50,6 +50,7 @@ body {
     --color-cornflower: #e7e9fc;
     --color-cloud: #f4f4fd;
     --color-mega-white: #FFFFFF;
+    --color-tuman-white: #AFB1B8;
 }
 
 
@@ -71,7 +72,7 @@ body {
     justify-content: space-between;
     padding-top: 24px;
     padding-bottom: 24px;
-    
+
 }
 
 .menu {
@@ -111,7 +112,7 @@ body {
     text-transform: uppercase;
     color: var(--color-navy-blue);
     display: inline;
-    
+
 }
 
 .logo-white-letters {
@@ -208,7 +209,7 @@ body {
 
 .hero-button:is(:hover, :focus) {
     background-color: #404BBF;
-    
+
 }
 
 /* ------------------Benefits----------- */
@@ -247,7 +248,7 @@ body {
 }
 
 .benefits-text {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -264,6 +265,22 @@ body {
     color: #2E2F42;
     margin-bottom: 72px;
 
+}
+
+.benefits-logo {
+    width: 64px;
+    height: 64px;
+
+
+}
+
+.benefits-img-container {
+    display: flex;
+    background: #F4F4FD;
+    border-radius: 4px;
+    justify-content: center;
+    padding-bottom: 24px;
+    padding-top: 24px;
 }
 
 /*----------------------Our Team---------------- */
@@ -292,9 +309,11 @@ body {
 }
 
 .card-bottom-text {
-    padding: 32px 16px;
+    /* padding: 32px 16px; */
     background-color: var(--color-mega-white);
     border-radius: 0px 0px 4px 4px;
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 
 .team-list-name {
@@ -314,13 +333,94 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
+    margin-bottom: 8px;
 }
+
+
+
+
+.social-list-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-iris);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-setings-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.social-list-logo {
+    content: ;
+    width: 16px;
+    height: 16px;
+    fill: var(--color-cloud);
+}
+
+.social-list-link:is(:hover, :focus) {
+    background-color: var(--color-ocean);
+}
+
+
+/* ---------------------------------Customers--------------------------------- */
+
+.customers-link {
+    display: flex;
+    width: 168px;
+    height: 88px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.customers-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
+    margin-bottom: 72px;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.customers-logo {
+    width: 104px;
+    height: 56px;
+    fill: var(--color-tuman-white);
+    
+}
+
+.customers-container {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.customers-link:is(:hover, :focus) {
+    border-color: var(--color-ocean);
+}
+
+.customers-link:is(:hover, :focus) .customers-logo {
+fill: var(--color-ocean);
+}
+
 
 /* --------------Footer-------------------- */
 
 .footer-container {
     display: flex;
-    flex-direction: column;
     padding-top: 91px;
     padding-bottom: 100px;
 }
@@ -352,6 +452,39 @@ body {
     width: 264px;
 }
 
+.footer-media-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer-media-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.footer-social-list-link {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-main-div {
+    margin-right: 120px;
+}
+
+.footer-social-list-link:is(:hover, :focus) {
+    background-color: var(--color-green);
+}
 /* !!!!!!!!!!!!!!!!!!!!Portfolio!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .portfolio-header {
@@ -403,7 +536,7 @@ body {
     flex-wrap: wrap;
     row-gap: 48px;
     column-gap: 24px;
-    
+
 }
 
 .portfolio-card-bottom-text {
@@ -436,4 +569,3 @@ body {
 }
 
 /* ------------------Footer-----------------------  */
-
